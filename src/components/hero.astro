@@ -1,0 +1,29 @@
+---
+import SocialIcons from './share/socialIcons.astro';
+---
+
+<section class="
+    bg-[url(/images/backgrounds/bg_1.webp)] bg-cover bg-bottom-left bg-no-repeat bg-fixed w-full h-[calc(100vh-6rem)]
+    grid grid-cols-7 gap-3 p-4  overflow-hidden
+    "
+>
+    <div class="col-span-4 flex items-center justify-center">
+        <img src="/images/hero_img.webp" alt="Personas usando productos de Marbu Home" 
+            class="max-w-lvh object-cover" />
+    </div>
+
+    <div class="col-span-3 flex flex-col items-center justify-center text-raisin-black-3 pr-4">
+        <h1 class="text-5xl font-bold mb-4">
+            Marbu Home
+        </h1>
+        <p class="text-3xl mb-6 border-t-5 border-t-dark-cyan ">
+            Soluciones plásticas para el hogar
+        </p>
+
+         <SocialIcons />
+
+    </div>
+
+
+
+</section>

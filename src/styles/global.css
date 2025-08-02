@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme{
+    --color-raisin-black: hsla(318, 15%, 13%, 1);
+    --color-midnight-green: hsla(187, 55%, 22%, 1);
+    --color-raisin-black-2: hsla(318, 15%, 13%, 1);
+    --color-platinum: hsla(300, 2%, 91%, 1);
+    --color-dark-cyan: hsla(183, 89%, 34%, 1);
+    --color-midnight-green-2: hsla(186, 37%, 17%, 1);
+    --color-robin-egg-blue: hsla(182, 99%, 40%, 1);
+    --color-teal: hsla(183, 79%, 28%, 1);
+    --color-raisin-black-3: hsla(240, 3%, 14%, 1);
+    --color-verdigris: hsla(183, 95%, 36%, 1);
+    --color-gradiant-1:#1B383B ;
+    --color-gradiant-2:#4A99A1 ;
+}
+
+.social-button{
+    @apply rounded-full size-12 sm:size-14 flex items-center justify-center p-2 hover:scale-110 transition-transform;
+}
