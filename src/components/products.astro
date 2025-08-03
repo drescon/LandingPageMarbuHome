@@ -5,16 +5,16 @@ import ProductsGeneral from '../assets/images/products/products-general.webp'
 import Wlink from './share/wlink.astro';
 import {getCollection} from 'astro:content'
 import Carousel from './share/carousel.astro';
-import { date } from 'astro:schema';
+
 
 const products = await getCollection('products')
-const data = products.map(product => {
+const data = products.map((product: { data: any; }) => {
     return product.data
 })
 ---
 
 <section  class="
-    bg-[url(backgrounds/bg_3.webp)]
+    bg-[url(/backgrounds/bg_3.webp)]
     bg-cover bg-bottom-left bg-no-repeat bg-fixed w-full
     grid grid-cols-3
     h-screen
