@@ -1,0 +1,5 @@
+---
+title: "Organizador de Cepillos"
+description: "Mantén tus cepillos organizados y al alcance de la mano con nuestro práctico organizador."
+image: "/products/organizador_de_cepillos.webp"
+---

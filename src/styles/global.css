@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+
 @theme{
     --color-raisin-black: hsla(318, 15%, 13%, 1);
     --color-midnight-green: hsla(187, 55%, 22%, 1);
@@ -14,8 +15,24 @@
     --color-verdigris: hsla(183, 95%, 36%, 1);
     --color-gradiant-1:#1B383B ;
     --color-gradiant-2:#4A99A1 ;
+    --color-whatsaap-green:#4FCE5D;
 }
 
 .social-button{
     @apply rounded-full size-12 sm:size-14 flex items-center justify-center p-2 hover:scale-110 transition-transform;
+}
+
+@layer utilities {
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 25s linear infinite;
+  }
 }

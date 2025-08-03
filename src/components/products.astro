@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import Seller from '../assets/images/products/seller.webp';
+import ProductsGeneral from '../assets/images/products/products-general.webp'
+import Wlink from './share/wlink.astro';
+import {getCollection} from 'astro:content'
+import Carousel from './share/carousel.astro';
+import { date } from 'astro:schema';
+
+const products = await getCollection('products')
+const data = products.map(product => {
+    return product.data
+})
+console.log(products)
+
+---
+
+<section  class="
+    bg-[url(backgrounds/bg_3.webp)]
+    bg-cover bg-bottom-left bg-no-repeat bg-fixed w-full
+    grid grid-cols-3
+    h-screen
+    "
+     id="products">
+
+    <div class="flex justify-center items-center col-span-1 flex-col gap-3 text-raisin-black-3">
+        <Image src={Seller}  class="w-4/5 object-cover " alt="Vendedor de MarbuHome" />
+        <Wlink href="https://wa.me/573102757056?text=Hola%2C%20quisiera%20recibir%20asesor%C3%ADa%20por%20favor"
+        wIcon="50"
+        hIcon="50"
+        >
+            Haz tu pedido
+        </Wlink>
+
+    </div>
+    <div  class="flex flex-col items-center justify-center col-span-2">
+        <h3 class="text-4xl font-bold">Nuestros Productos </h3>
+        <Image src={ProductsGeneral} alt="Todos los productos de Marbu Home" class="w-1/4 object-cover rounded-full shadow-2xl"  />
+       <Carousel items={data}/>
+    </div>
+
+
+</section>

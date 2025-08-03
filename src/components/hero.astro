@@ -1,15 +1,18 @@
 ---
 import SocialIcons from './share/socialIcons.astro';
+import { Image } from 'astro:assets';
+import HeroImage from '../assets/images/hero_img.webp';
 ---
 
 <section class="
-    bg-[url(/images/backgrounds/bg_1.webp)] bg-cover bg-bottom-left bg-no-repeat bg-fixed w-full h-[calc(100vh-6rem)]
+    bg-[url(backgrounds/bg_2.webp)]
+    bg-cover bg-bottom-left bg-no-repeat bg-fixed w-full h-[calc(100vh-6rem)]
     grid grid-cols-7 gap-3 p-4  overflow-hidden
     "
 >
     <div class="col-span-4 flex items-center justify-center">
-        <img src="/images/hero_img.webp" alt="Personas usando productos de Marbu Home" 
-            class="max-w-lvh object-cover" />
+        <Image src={HeroImage} alt="Personas usando productos de Marbu Home" 
+            class="max-w-lvh object-cover "  loading="eager"/>
     </div>
 
     <div class="col-span-3 flex flex-col items-center justify-center text-raisin-black-3 pr-4">

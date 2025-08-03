@@ -1,0 +1,16 @@
+---
+import Wicon from "./wicon.astro";
+
+const { href = "#",wIcon="24",hIcon="24" } = Astro.props;
+
+---
+<a href={href} class="w-full flex justify-center items-center gap-2 text-white hover:scale-110 transition-transform">
+    <span class="rounded-full bg-whatsaap-green p-4">
+        <Wicon width={wIcon} height={hIcon}></Wicon>
+    </span>
+        
+
+    <span class="bg-whatsaap-green rounded w-1/2 text-2xl  text-center font-bold max-h-20 p-2 ">
+        <slot />
+    </span>
+</a>
