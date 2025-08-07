@@ -8,6 +8,7 @@ export interface Props {
 }
 
 const { items } = Astro.props;
+
 ---
 
 
@@ -20,7 +21,7 @@ mt-6
             items.map(item => {
                 return(
                     <li>
-                        <img src={item.image} alt={item.title} class="h-64 w-auto rounded-4xl "/>
+                        <img src={item.image} alt={item.title} class="h-64 w-auto rounded-4xl" loading="lazy"/>
                      </li>
                 )
             })

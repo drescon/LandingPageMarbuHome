@@ -5,21 +5,20 @@ import HeroImage from '../assets/images/hero_img.webp';
 ---
 
 <section class="
-    bg-[url(/backgrounds/bg_2.webp)]
-    bg-cover bg-bottom-left bg-no-repeat bg-fixed w-full h-[calc(100vh-6rem)]
+     w-full h-[calc(100vh-6rem)]
     grid grid-cols-7 gap-3 p-4  overflow-hidden
     "
 >
     <div class="col-span-4 flex items-center justify-center">
         <Image src={HeroImage} alt="Personas usando productos de Marbu Home" 
-            class="max-w-lvh object-cover "  loading="eager"/>
+            class="max-w-lvh object-cover animate-fade-in "  loading="eager"/>
     </div>
 
     <div class="col-span-3 flex flex-col items-center justify-center text-raisin-black-3 pr-4">
-        <h1 class="text-5xl font-bold mb-4">
+        <h1 class="text-5xl font-bold mb-4 animate-fade-in-right">
             Marbu Home
         </h1>
-        <p class="text-3xl mb-6 border-t-5 border-t-dark-cyan ">
+        <p class="text-3xl mb-6 border-t-5 border-t-dark-cyan animate-fade-in-right animate-delay-250 ">
             Soluciones plásticas para el hogar
         </p>
 
