@@ -5,27 +5,29 @@ import HeroImage from '../assets/images/hero_img.webp';
 ---
 
 <section class="
-     w-full h-[calc(100vh-6rem)]
-    grid grid-cols-7 gap-3 p-4  overflow-hidden
-    "
->
-    <div class="col-span-4 flex items-center justify-center">
-        <Image src={HeroImage} alt="Personas usando productos de Marbu Home" 
-            class="max-w-lvh object-cover animate-fade-in "  loading="eager"/>
-    </div>
+  w-full h-fit
+  grid grid-cols-1 lg:grid-cols-7 gap-3 p-4 
+">
+  <!-- Imagen -->
+  <div class="order-1 lg:order-1 col-span-1 lg:col-span-4 flex items-center justify-center">
+    <Image 
+      src={HeroImage} 
+      alt="Personas usando productos de Marbu Home" 
+      class="w-lvh max-w-full object-cover animate-fade-in"
+      loading="eager"
+    />
+  </div>
 
-    <div class="col-span-3 flex flex-col items-center justify-center text-raisin-black-3 pr-4">
-        <h1 class="text-5xl font-bold mb-4 animate-fade-in-right">
-            Marbu Home
-        </h1>
-        <p class="text-3xl mb-6 border-t-5 border-t-dark-cyan animate-fade-in-right animate-delay-250 ">
-            Soluciones plásticas para el hogar
-        </p>
+  <!-- Texto -->
+  <div class="order-2 lg:order-2 col-span-1 lg:col-span-3 flex flex-col items-center lg:items-start justify-center text-raisin-black-3 pr-0 lg:pr-4">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 animate-fade-in-right">
+      Marbu Home
+    </h1>
+    <p class="text-lg sm:text-xl lg:text-3xl mb-6 border-t-4 border-t-dark-cyan animate-fade-in-right animate-delay-250">
+      Soluciones plásticas para el hogar
+    </p>
 
-         <SocialIcons />
-
-    </div>
-
-
-
+    <SocialIcons />
+  </div>
 </section>
+

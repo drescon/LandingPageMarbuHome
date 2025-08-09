@@ -7,40 +7,36 @@ import ProductsIcon from '../assets/icons/buy.svg';
 import ContactIcon from '../assets/icons/contact.svg';
 
 ---
-    <header class="
-        grid grid-cols-2 p-5 w-full h-24 bg-linear-to-r from-gradiant-2 to-gradiant-1
-        text-white
-    ">
+<header class="
+    flex flex-wrap items-center justify-between
+    p-5 w-full h-auto bg-gradient-to-r from-gradiant-2 to-gradiant-1 text-white
+">
+    <!-- Logo -->
     <a href="/" class="flex items-center gap-3">
-        <Image src={MarbuIcon} alt="Marbu Home Logo" class="w-15 h-15"  loading="eager"/>
-        <nav class="text-3xl font-semibold">Marbu Home</nav>
+        <Image src={MarbuIcon} alt="Marbu Home Logo" class="w-12 h-12" loading="eager"/>
+        <nav class="text-xl sm:text-3xl font-semibold">Marbu Home</nav>
     </a>
 
-    <ul class="flex justify-center items-center gap-5 text-xl font-semibold">
+    <!-- Menú -->
+    <ul class="flex flex-col sm:flex-row sm:gap-5 gap-3 text-lg sm:text-xl font-semibold mt-4 sm:mt-0">
         <li class="transition-all duration-300 transform hover:scale-105">
-            <a href="#about" class="
-                hover:text-gray-300 hover:underline  ">
-
-                <Image src={AboutIcon} alt="Sobre Nosotros" title="Sobre Nosotros" class="w-6 h-6 inline"  loading="eager"/>
+            <a href="#about" class="hover:text-gray-300 hover:underline">
+                <Image src={AboutIcon} alt="Sobre Nosotros" title="Sobre Nosotros" class="w-5 h-5 sm:w-6 sm:h-6 inline" loading="eager"/>
                 Sobre Nosotros
             </a>
         </li>
         <li class="transition-all duration-300 transform hover:scale-105">
-            <a href="#products" class="
-                hover:text-gray-300 hover:underline">
-                <Image src={ProductsIcon} alt="Productos" title="Productos" class="w-6 h-6 inline"  loading="eager"/>
+            <a href="#products" class="hover:text-gray-300 hover:underline">
+                <Image src={ProductsIcon} alt="Productos" title="Productos" class="w-5 h-5 sm:w-6 sm:h-6 inline" loading="eager"/>
                 Productos
             </a>
         </li>
         <li class="transition-all duration-300 transform hover:scale-105">
-            <a href="#contact" class="
-                hover:text-gray-300 hover:underline">
-                <Image src={ContactIcon} alt="Contactanos" title="Contactanos" class="w-6 h-6 inline"  loading="eager"/>
+            <a href="#contact" class="hover:text-gray-300 hover:underline">
+                <Image src={ContactIcon} alt="Contactanos" title="Contactanos" class="w-5 h-5 sm:w-6 sm:h-6 inline" loading="eager"/>
                 Contactanos
             </a>
         </li>
-    
     </ul>
-
-    </header>
 </header>
+

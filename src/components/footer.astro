@@ -7,48 +7,46 @@ import Ud from '../assets/images/sponsors/logo_ud_blanco.webp'
 import Emprender from '../assets/images/sponsors/logo_emprender_blanco.webp'
 import Desarrollo from '../assets/images/sponsors/secretaria_desarrollo_blanco.webp'
 ---
-<footer class="bg-linear-to-r from-gradiant-2 via-teal to-gradiant-1 text-white flex flex-col justify-center items-center">
-    <div class="w-full flex justify-center items-center p-4 gap-5">
-        <Image src={MarbuIcon} alt="Marbu Home Logo" class="w-30 h-30 mr-10"/>
-        <div class="border-r-1 p-2">
-            <span class="text-2xl font-bold">Menu</span>
-            <ul class="text-sm">
+<footer class="bg-linear-to-r from-gradiant-2 via-teal to-gradiant-1 text-white flex flex-col items-center">
+    
+    <!-- Logo + Menú + Redes -->
+    <div class="w-full flex flex-col lg:flex-row justify-center items-center p-4 gap-8 lg:gap-12">
+        <!-- Logo -->
+        <Image src={MarbuIcon} alt="Marbu Home Logo" class="w-24 h-24 lg:w-30 lg:h-30" />
+        
+        <!-- Menú -->
+        <div class="lg:border-r lg:pr-6">
+            <span class="text-xl lg:text-2xl font-bold block mb-2">Menú</span>
+            <ul class="text-sm space-y-1">
                 <li><a class="hover:underline" href="#about">Sobre Nosotros</a></li>
                 <li><a class="hover:underline" href="#products">Productos</a></li>
                 <li><a class="hover:underline" href="#contact">Contacto</a></li>
             </ul>
         </div>
-        <div>
-            <span class="text-2xl font-bold ">Siguenos</span>
-            <SocialIcons  />
+        
+        <!-- Redes sociales -->
+        <div class="text-center">
+            <span class="text-xl lg:text-2xl font-bold block mb-2">Síguenos</span>
+            <SocialIcons />
         </div>
-     
     </div>
-    <div class="flex justify-center items-center gap-6 border-t-1 w-fit p-5">
-        <Image
-            src={Republica}
-            alt="Logo de la república de Colombia"
-            class="h-16 w-auto object-contain"
-        />
-        <Image
-            src={Desarrollo}
-            alt="Logo de la secretaria de desarrollo de Bogotá"
-            class="h-16 w-auto object-contain"
-        />
-        <Image
-            src={Emprender}
-            alt="Logo de fondo emprender"
-            class="h-16 w-auto object-contain"
-        />
-         <Image
-            src={Ud}
-            alt="Logo de la universidad distrital Francisco José de Caldas "
-            class="h-16 w-auto object-contain"
-        />
+
+    <!-- Logos institucionales -->
+    <div class="flex flex-wrap justify-center items-center gap-6 border-t border-white/30 w-full p-5">
+        <Image src={Republica} alt="Logo de la república de Colombia" class="h-12 lg:h-16 w-auto object-contain" />
+        <Image src={Desarrollo} alt="Logo de la secretaria de desarrollo de Bogotá" class="h-12 lg:h-16 w-auto object-contain" />
+        <Image src={Emprender} alt="Logo de fondo emprender" class="h-12 lg:h-16 w-auto object-contain" />
+        <Image src={Ud} alt="Logo de la universidad distrital Francisco José de Caldas" class="h-12 lg:h-16 w-auto object-contain" />
     </div>
-    <div class="w-fit mx-auto flex flex-col">
-        <span>&copy; 2025 Marbu Home. Todos los derechos reservados.</span>
-        <span class="text-center">Desarrollado por <a href="https://www.linkedin.com/in/drsecon/" target="_blank"><strong>@drescon</strong></a></span>
-     </div>
+
+    <!-- Derechos reservados -->
+    <div class="w-full text-center border-t border-white/30 py-4 px-2">
+        <span class="block">&copy; 2025 Marbu Home. Todos los derechos reservados.</span>
+        <span>Desarrollado por 
+            <a href="https://www.linkedin.com/in/drsecon/" target="_blank" class="font-bold hover:underline">
+                @drescon
+            </a>
+        </span>
+    </div>
 
 </footer>

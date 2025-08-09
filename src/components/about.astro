@@ -4,20 +4,35 @@ import MarbuIconPaint from '../assets/images/about/marbuhome_logo.webp';
 
 ---
 
-<section class=" bg-black/5 backdrop-blur-sm h-screen grid grid-cols-[40%_60%] overflow-hidden" id="about">
-
-    <div class=" flex flex-col items-center justify-center">
-        <article class="prose prose-lg pl-10">
-            <span >Sobre Nosotros</span>
-            <h2 class=" mt-0 text-4xl font-bold">Dedicación y Excelencia para el Bienestar de los Hogares Colombianos 🇨🇴</h2>
-            <p class="text-lg"><strong>En Marbu Home nos dedicamos a ofrecer soluciones plásticas innovadoras pensadas para los hogares colombianos.</strong> Nuestro compromiso es brindar productos de alta calidad, prácticos y duraderos, que acompañen el día a día de las familias en todo el país, facilitando sus tareas y mejorando su bienestar en el hogar.</p>
-            <p class="text-xl"> 
-                <strong>🇨🇴 Somos productores 100% colombianos 🇨🇴</strong>
+<section 
+  class="bg-black/5 backdrop-blur-sm h-auto lg:h-screen 
+         grid grid-cols-1 lg:grid-cols-[40%_60%] overflow-hidden" 
+  id="about"
+>
+    <!-- Texto -->
+    <div class="flex flex-col items-center justify-center p-6 lg:p-10">
+        <article class="prose prose-lg max-w-none">
+            <span class="block text-sm uppercase tracking-wide text-gray-600">Sobre Nosotros</span>
+            <h2 class="mt-2 text-3xl lg:text-4xl font-bold text-center lg:text-left">
+                Dedicación y Excelencia para el Bienestar de los Hogares Colombianos 🇨🇴
+            </h2>
+            <p class="text-base lg:text-lg text-center lg:text-left">
+                <strong>En Marbu Home nos dedicamos a ofrecer soluciones plásticas innovadoras pensadas para los hogares colombianos.</strong> 
+                Nuestro compromiso es brindar productos de alta calidad, prácticos y duraderos, que acompañen el día a día de las familias en todo el país, 
+                facilitando sus tareas y mejorando su bienestar en el hogar.
+            </p>
+            <p class="text-lg lg:text-xl font-semibold text-center lg:text-left"> 
+                🇨🇴 Somos productores 100% colombianos 🇨🇴
             </p>
         </article>
     </div>
-    <div class=" flex flex-col items-center justify-center">
-        <Image src={MarbuIconPaint} alt="Logo de Marbu Home" class="w-3/4 h-auto object-cove" />
-    </div>
 
+    <!-- Imagen -->
+    <div class="flex flex-col items-center justify-center p-6">
+        <Image 
+            src={MarbuIconPaint} 
+            alt="Logo de Marbu Home" 
+            class="w-2/3 md:w-1/2 lg:w-3/4 h-auto object-cover" 
+        />
+    </div>
 </section>
