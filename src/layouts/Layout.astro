@@ -10,11 +10,31 @@ import Analytics from '@vercel/analytics/astro'
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="En Marbu Home creamos soluciones plásticas innovadoras para hogares colombianos, combinando calidad, diseño y funcionalidad.">
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://www.marbuhome.com/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="MarbuHome - Soluciones plasticas para el hogar">
+		<meta property="og:description" content="En Marbu Home creamos soluciones plásticas innovadoras para hogares colombianos, combinando calidad, diseño y funcionalidad.">
+		<meta property="og:image" content="/marbuhome_logo.webp">
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="marbuhome.com">
+		<meta property="twitter:url" content="https://www.marbuhome.com/">
+		<meta name="twitter:title" content="MarbuHome - Soluciones plasticas para el hogar">
+		<meta name="twitter:description" content="En Marbu Home creamos soluciones plásticas innovadoras para hogares colombianos, combinando calidad, diseño y funcionalidad.">
+		<meta name="twitter:image" content="/public/marbuhome_logo.webp">
+
+
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<meta name="generator" content={Astro.generator} />
+		
 		<title>{title}</title>
 		<Analytics />
 	</head>
